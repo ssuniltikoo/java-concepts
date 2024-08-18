@@ -1,4 +1,4 @@
-package dev.core.concepts.java.concurrency.executors;
+package dev.core.concepts.java.concurrency.executors.Threads;
 
 public class NumberPrinter implements Runnable{
     private final int num;

@@ -1,4 +1,4 @@
-package dev.core.concepts.java.concurrency.executors;
+package dev.core.concepts.java.concurrency.executors.Threads;
 
 public class FormatPrinter implements Runnable{
     private int a;
