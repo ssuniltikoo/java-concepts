@@ -11,9 +11,9 @@ public class Subtractor implements Runnable{
     @Override
     public void run() {
         for(int i =0; i <10000000; i++){
-            synchronized (numberClazz) {
+          //  synchronized (numberClazz) {
                 numberClazz.num-=1;
-            }
+         //   }
 
           //  System.out.println(Thread.currentThread().getName() + " value of num from Subtractor  is now:  " + numberClazz.num );
         }
