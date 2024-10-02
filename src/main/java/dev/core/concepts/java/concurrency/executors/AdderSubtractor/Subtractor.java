@@ -11,9 +11,9 @@ public class Subtractor implements Callable<Void> {
 
     @Override
     public Void call() throws Exception {
-        for(int i=0; i < 100000; ++i){
+        for(int i=0; i < 1000; ++i){
           //  synchronized (value) {
-                this.value.num -= 1;
+                this.value.num.getAndAdd(-i);
           //  }
         }
         return null;

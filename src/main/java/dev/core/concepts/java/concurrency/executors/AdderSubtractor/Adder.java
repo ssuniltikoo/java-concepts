@@ -12,11 +12,13 @@ public class Adder implements Callable<Void> {
 
     @Override
     public Void call() throws Exception {
-        for(int i=0; i < 100000; ++i){
-            synchronized(value) {
-                this.value.num += 1;
-            }
+        for(int i=0; i < 1000; ++i){
+//            synchronized(value) {
+                this.value.num.getAndAdd(i);
+//            }
         }
+
+
         return null;
     }
 }
